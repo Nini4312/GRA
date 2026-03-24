@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    background-color: #FFD7DE;
+}
+body wrapper {
+    width: 1366px;
+    display: block;
+}
+.logo {
+    width: 200px;
+    margin: 10px;
+    height: 200px;
+    vertical-align: middle;
+}
+nav a {
+    padding: 20px;
+    background-color: #800080;
+    display: inline-block;
+    text-decoration: none;
+}
+nav li {
+    list-style-type: none;
+}
