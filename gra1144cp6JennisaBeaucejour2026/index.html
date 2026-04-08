@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Windsor | Dresses | Jennisa Beaucejour, 2026</title>
+<style type="text/css">
+body {
+    margin: 0;
+    background-color: #9B2EBC;
+}
+#product {
+    position: relative;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+    background-color: #EDEEEF;
+}
+section {
+    display: inline-block;
+    margin: 20px;
+    width: 600px;
+    vertical-align: top;
+    height: 900px;
+}
+#blueswatch {
+    background-color: #0D57CE;
+}
+#pinkswatch {
+    background-color: #FFD2D3;
+}
+#redswatch {
+    background-color: #BD002F;
+}
+button {
+    width: 50px;
+    margin: 10px;
+    border-radius: 25px;
+    border: medium solid #A921C3;
+    height: 50px;
+}
+button:hover {
+    border: medium solid #F1D2FF;
+}
+#product img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('Blue Dress (Back).jpg','Pink Dress (Back).jpg','Red Dress (Back).jpg')">
+<wrapper>
+  <header>
+    <h1>Windsor</h1>
+  </header>
+  <main>
+    <section id="product">
+	  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('bluedress','','Blue Dress (Back).jpg',1)"><img src="Blue Dress (Front).jpg" alt="Blue Corset Lace Formal Dress" width="1340" height="1963" id="bluedress"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('pinkdress','','Pink Dress (Back).jpg',1)"><img src="Pink Dress (Front).jpg" alt="Pink Corset Lace Formal Dress" width="1340" height="1963" id="pinkdress"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('reddress','','Red Dress (Back).jpg',1)"><img src="Red Dress (Front).jpg" alt="Red Corset Lace Formal Dress" width="1340" height="1963" id="reddress"></a> </section>
+    <section id="description">
+      <h2>Dresses</h2>
+      <p>Write a description for your product</p>
+      <h3>$120.99</h3>
+      <button id="blueswatch" onClick="MM_showHideLayers('bluedress','','show','pinkdress','','hide','reddress','','hide')"></button>
+      <button id="pinkswatch" onClick="MM_showHideLayers('bluedress','','hide','pinkdress','','show','reddress','','hide')"></button>
+      <button id="redswatch" onClick="MM_showHideLayers('bluedress','','hide','pinkdress','','hide','reddress','','show')"></button>
+    </section>
+	</main>
+  <footer> </footer>
+</wrapper>
+</body>
+</html>
