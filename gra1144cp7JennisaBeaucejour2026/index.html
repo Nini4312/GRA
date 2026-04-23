@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travelocity | JennisaBeaucejour, 2026</title>
+<style type="text/css">
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(effiel%20tower.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    background-color: #FFFFFF;
+}
+.logo {
+    height: 75px;
+    width: auto;
+    margin-left: 17px;
+    margin-bottom: 26px;
+}
+wrapper {
+    width: 1366px;
+    margin: 32px auto;
+    display: block;
+    border-radius: 16px;
+    background-color: #000000;
+}
+#Tabs1 ul {
+    background-image: none;
+    background-color: transparent;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header><img src="Travelocity.jpeg" alt="" width="1000" height="310" class="logo"></header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img src="plane.png" alt="" width="50" height="50"><br>
+      Flights</a></li>
+      <li><a href="#tabs-2"><img src="hotel.png" alt="" width="50" height="50"><br>
+      Hotels</a></li>
+      <li><a href="#tabs-3"><img src="cars.png" alt="" width="153" height="50"><br>
+      Cars</a></li>
+      <li><a href="#tabs-4"><img src="packages.png" alt="" width="56" height="50"><br>
+      Packages</a></li>
+      <li><img src="activities.png" alt="" width="50" height="50"><br>
+      <a href="#tabs-5">Activites</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>Content 1</p>
+    </div>
+    <div id="tabs-2">
+      <p>Content 2</p>
+    </div>
+    <div id="tabs-3">
+      <p>Content 3</p>
+    </div>
+    <div id="tabs-4">
+      <p>Content 4</p>
+    </div>
+    <div id="tabs-5">
+      <p>Content 5</p>
+    </div>
+  </div>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
