@@ -1,35 +1,115 @@
 <!doctype html>
 <html>
 <head>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
-<title>Travelocity | JennisaBeaucejour, 2026</title>
+<title>Travel City | Jennisa Beaucejour | 2026</title>
+<script src="https://kit.fontawesome.com/44991b8944.js" crossorigin="anonymous"></script>
 <style type="text/css">
 body {
-    padding: 0;
+    width: 1366px;
+    height: 100vh;
     margin: 0;
-    background-image: url(effiel%20tower.jpg);
-    background-size: cover;
+    background-image: url("effiel tower.jpg");
     background-repeat: no-repeat;
-}
-header {
-    background-color: #FFFFFF;
-}
-.logo {
-    height: 75px;
-    width: auto;
-    margin-left: 17px;
-    margin-bottom: 26px;
+    background-color: #D0F3FB;
+    background-size: cover;
 }
 wrapper {
     width: 1366px;
-    margin: 32px auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: 175px;
+    margin-bottom: 0;
     display: block;
-    border-radius: 16px;
-    background-color: #000000;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    background-color: rgba(108,211,243,0.81);
+	border-radius:20px;
 }
-#Tabs1 ul {
+header {
+    height: 100px;
+    background-color: #004BD4;
+    margin-bottom: 50px;
+    align-items: center;
+}
+	#Tabs{
+		display: inline-block;
+	width: 60%; 
+    max-width: 1000px;}
+#Tabs ul li{
     background-image: none;
+    border: none;
     background-color: transparent;
+}
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+.tab1b {
+	display:grid;
+	grid-template-columns: 18% 18% 18% 18% 18% 10%; 
+	gap: 10px; 
+    justify-content: center;
+    padding: 20px;
+}
+#Tabs ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    border: none; 
+    background: transparent;
+}
+#Tabs ul li {
+    flex: 1;
+    margin: 2px; 
+    border: none;
+    border-radius: 4px; 
+    text-align: center;
+    background-color: rgba(57,150,235,1.00);
+}
+#Tabs ul li a {
+    display: block; 
+    padding: 15px 10px;
+    color: white; 
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+}
+#Tabs ul li.ui-tabs-active {
+    border-bottom: 4px solid white; 
+    background-color: rgba(192,223,255,1.00);
+}
+#Tabs ul li i {
+    font-size: 24px; 
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+p {
+    color: rgba(0,0,0,1.00);
+    font-size: 137%;
+	text-align: center;
+}
+	.icons{
+		display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    padding-top: 25px;
+    width: 100%;
+	
+	}
+footer {
+    margin-left: 336px;
+    margin-top: 441px;
 }
 </style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -40,42 +120,182 @@ wrapper {
 </head>
 
 <body>
-<header><img src="Travelocity.jpeg" alt="" width="1000" height="310" class="logo"></header>
-<wrapper>
-  <div id="Tabs1">
+	<wrapper>
+	<header>
+  <h1>TravelCity</h1>
+&nbsp;</header>
+	</wrapper>
+<wrapper class="icons">
+  <div id="Tabs">
     <ul>
-      <li><a href="#tabs-1"><img src="plane.png" alt="" width="50" height="50"><br>
-      Flights</a></li>
-      <li><a href="#tabs-2"><img src="hotel.png" alt="" width="50" height="50"><br>
-      Hotels</a></li>
-      <li><a href="#tabs-3"><img src="cars.png" alt="" width="153" height="50"><br>
-      Cars</a></li>
-      <li><a href="#tabs-4"><img src="packages.png" alt="" width="56" height="50"><br>
-      Packages</a></li>
-      <li><img src="activities.png" alt="" width="50" height="50"><br>
-      <a href="#tabs-5">Activites</a></li>
+      <li><a href="#tabs-1"><i class="fa-solid fa-plane-arrival"></i><br>
+Flights </a></li>
+<li><a href="#tabs-2"><i class="fa-solid fa-bed"></i><br>
+Hotels</a></li>
+<li><a href="#tabs-3"><i class="fa-solid fa-car-side"></i><br>
+Rentals</a></li>
+<li><a href="#tabs-4"><i class="fa-solid fa-parachute-box"></i><br>
+Packages</a></li>
+<li><a href="#tabs-5"><i class="fa-solid fa-person-skating"></i><br>
+Activities</a></li>
     </ul>
     <div id="tabs-1">
-      <p>Content 1</p>
+      <p>Find your Flights</p>
+      <div class="tab1b">
+        <input type="text" placeholder="Leaving From">
+        <input type="text" placeholder="Going To">
+        <input type="date">
+        <input type="date">
+        <select>
+          <option value="0">Number of travelers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        <input type="button" value="search">
+      </div>
     </div>
-    <div id="tabs-2">
-      <p>Content 2</p>
+<div id="tabs-2">
+      <p>Find your Hotels</p>
+	 <div class="tab2b">
+        <input type="text" placeholder="where To">
+        <input type="date">
+        <input type="date">
+        <select>
+          <option value="0">Number of travelers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        <input type="button" value="search">
+      </div>
     </div>
-    <div id="tabs-3">
-      <p>Content 3</p>
+<div id="tabs-3">
+  <p>Find your Car Rental</p>
+	 <div class="tab3b">
+        <input type="text" placeholder="Pick Up">
+        <input type="text" placeholder="Drop Off">
+        <input type="date">
+        <input type="date">
+         <select>
+          <option value="0">Pick Up Time</option>
+          <option value="1:00 AM">1:00 AM</option>
+          <option value="2:00 AM">2:00 AM</option>
+          <option value="3:00 AM">3:00 AM</option>
+          <option value="4:00 AM">4:00 AM</option>
+          <option value="5:00 AM">5:00 AM</option>
+          <option value="6:00 AM">6:00 AM</option>
+          <option value="7:00 AM">7:00 AM</option>
+          <option value="8:00 AM">8:00 AM</option>
+          <option value="9:00 AM">9:00 AM</option>
+		  <option value="10:00 AM">10:00 AM</option>
+		  <option value="11:00 AM">11:00 AM</option>
+          <option value="12:00 AM">12:00 AM</option>
+          <option value="1:00 PM">1:00 PM</option>
+          <option value="2:00 PM">2:00 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+          <option value="4:00 PM">4:00 PM</option>
+          <option value="5:00 PM">5:00 PM</option>
+          <option value="6:00 PM">6:00 PM</option>
+          <option value="7:00 PM">7:00 PM</option>
+          <option value="8:00 PM">8:00 PM</option>
+          <option value="9:00 PM">9:00 PM</option>
+		  <option value="10:00 PM">10:00 PM</option>
+		  <option value="11:00 PM">11:00 PM</option>
+          <option value="12:00 PM">12:00 PM</option>
+          </select>
+		  <select>
+          <option value="0"> Drop Off Time</option>
+           <option value="1:00 AM">1:00 AM</option>
+          <option value="2:00 AM">2:00 AM</option>
+          <option value="3:00 AM">3:00 AM</option>
+          <option value="4:00 AM">4:00 AM</option>
+          <option value="5:00 AM">5:00 AM</option>
+          <option value="6:00 AM">6:00 AM</option>
+          <option value="7:00 AM">7:00 AM</option>
+          <option value="8:00 AM">8:00 AM</option>
+          <option value="9:00 AM">9:00 AM</option>
+		  <option value="10:00 AM">10:00 AM</option>
+		  <option value="11:00 AM">11:00 AM</option>
+          <option value="12:00 AM">12:00 AM</option>
+          <option value="1:00 PM">1:00 PM</option>
+          <option value="2:00 PM">2:00 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+          <option value="4:00 PM">4:00 PM</option>
+          <option value="5:00 PM">5:00 PM</option>
+          <option value="6:00 PM">6:00 PM</option>
+          <option value="7:00 PM">7:00 PM</option>
+          <option value="8:00 PM">8:00 PM</option>
+          <option value="9:00 PM">9:00 PM</option>
+		  <option value="10:00 PM">10:00 PM</option>
+		  <option value="11:00 PM">11:00 PM</option>
+          <option value="12:00 PM">12:00 PM</option>
+          </select>
+        <input type="button" value="search">
+      </div>
+</div>
+<div id="tabs-4">
+  <p>Bundle and Save</p>
+	<div class="tab4b">
+        <input type="text" placeholder="Leaving From">
+        <input type="text" placeholder="Going To">
+        <input type="date">
+        <input type="date">
+        <select>
+          <option value="0">Number of travelers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        <input type="button" value="search">
     </div>
-    <div id="tabs-4">
-      <p>Content 4</p>
-    </div>
-    <div id="tabs-5">
-      <p>Content 5</p>
-    </div>
+</div>
+<div id="tabs-5">
+  <p>Find things to do</p>
+	<div class="tab1b">
+        <input type="text" placeholder="Going To">
+        <input type="date">
+        <select>
+          <option value="0">Number of travelers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select>
+        <input type="button" value="search">
+      </div>
+</div>
   </div>
 </wrapper>
+<footer><p>© 2026, Jennisa Beaucejour. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+</footer>
 <script type="text/javascript">
 $(function() {
-	$( "#Tabs1" ).tabs(); 
+	$( "#Tabs" ).tabs(); 
 });
 </script>
-</body>
+</body> 
 </html>
