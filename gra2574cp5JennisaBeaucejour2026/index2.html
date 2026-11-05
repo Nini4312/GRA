@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML-File-Drag-Drop-Game|JennisaBeaucejour, 2026</title>
+	<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<style type="text/css">
+body {
+    margin: 0;
+}
+wrapper {
+    width: 1000px;
+    margin: auto;
+    background-color: rgba(240,128,128,1.00);
+    display: grid;
+    grid-template-columns: 49% 49%;
+	auto auto;
+    gap: 16px;
+    padding: 16px;
+  
+}
+div {
+    height: 200px;
+    background-color: rgba(173,216,230,1.00);
+}
+	img{
+    width: 100%;
+    height: Auto;
+	}
+</style>
+</head>
+
+<body>
+<wrapper>
+  <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</wrapper>
+</body>
+</html>
