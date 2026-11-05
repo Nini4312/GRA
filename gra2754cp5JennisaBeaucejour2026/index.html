@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Butterfly Effect</title>
+	<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<style type="text/css">
+body {
+    margin: 0;
+    background-color: rgba(173,216,230,1.00);
+}
+wrapper {
+    width: 1041px;
+    height: 944px;
+    margin: auto;
+    display: block;
+    background-color: rgba(255,255,255,0.57);
+    background-image: url(images/Body.png);
+    background-size: contain;
+    background-position: top;
+    position: relative;
+}
+section {
+	display:grid;
+	grid-template-columns: 25% 25% 25% 25% 25%;
+	gap:14px;
+	position:absolute;
+	top:774px;
+	left:10px;
+	text-align: center;
+	
+		
+}
+#drop1 {
+    position: absolute;
+    bottom: auto;
+    top: 44px;
+    left: 356px;
+    width: 304px;
+    //border: thin solid gray;
+    height: 276px;
+}
+#drop2 {
+    //border: thin solid gray;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 479px;
+    height: 387px;
+    z-index: 1;
+}
+	section div{
+		height:150px;
+		//border:thin solid gray;
+		width:150px;
+	}
+#drop3 {
+    width: 345px;
+    height: 395px;
+    //border: thin solid gray;
+    position: absolute;
+    left: 141px;
+    top: 352px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+#drop4 {
+    //border: thin solid gray;
+    width: 499px;
+    height: 405px;
+    top: 0px;
+    position: absolute;
+    left: 527px;
+    z-index: 1;
+}
+#drop5 {
+    position: absolute;
+    left: 530px;
+    top: 360px;
+    width: 365px;
+    //border: thin solid gray;
+    height: 384px;
+}
+header {
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-size: 77px;
+    margin: auto;
+    color: rgba(41,154,255,1.00);
+    width: 1041px;
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+h2 {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: 19px;
+    margin: auto;
+    width: 1041px;
+    padding-top: 0px;
+    padding-bottom: 42px;
+}
+</style>
+</head>
+
+<body>
+<header>The Butterfly Effect</header>
+<h2>Drag and drop to piece together the butterfly</h2>
+<wrapper>
+  <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <section>
+    <div id="drop6" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/Antenna.png" alt="" width="450" height="305" id="drag1" draggable="true" ondragstart="drag(event)"></div>
+    <div id="drop7" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/TopLeft-Wing.png" alt="" width="505" height="418" id="drag2" draggable="true" ondragstart="drag(event)"></div>
+    <div id="drop8" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/BottomLeft-Wing%202.png" alt="" width="387" height="433" id="drag3" draggable="true" ondragstart="drag(event)"></div>
+    <div id="drop9" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/TopRight-Wing.png" alt="" width="504" height="421" id="drag4" draggable="true" ondragstart="drag(event)"></div>
+    <div id="drop10" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/BottomRight-Wing%202.png" alt="" width="386" height="432" id="drag5" draggable="true" ondragstart="drag(event)"></div>
+  </section>
+</wrapper>
+<footer>Content for New footer Tag Goes Here</footer>
+</body>
+</html>
